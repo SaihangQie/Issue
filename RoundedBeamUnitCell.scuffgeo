@@ -1,0 +1,11 @@
+LATTICE
+	VECTOR 1.0  0.0
+ENDLATTICE
+
+
+REGION Exterior           MATERIAL VACUUM
+REGION Inner              MATERIAL PEC
+SURFACE S1
+    MESHFILE RoundedBeamUnitCell.msh
+    REGIONS Exterior Inner
+ENDSURFACE
